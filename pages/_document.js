@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from next/script;
+import Script from "next/script";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -30,12 +30,10 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             referrerpolicy="no-referrer"
           />
-        
         </Head>
         <body>
           <Main />
           <NextScript />
-
 
           <Script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
