@@ -5,8 +5,7 @@ import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { Navbar } from "../components/navbar";
 import { useEffect, useState } from "react";
 
-export default function Home({ postData }) {
-  console.log(postData);
+export default function Home() {
   const [searchValue, setSearch] = useState("");
   const [activeSMedia, setActiveSMedia] = useState("twitter");
   const [tweets, setTweets] = useState(() => {
@@ -170,22 +169,3 @@ export default function Home({ postData }) {
     </>
   );
 }
-
-export async function getStaticProps() {
-  const response = await fetch(
-    "https://www.reddit.com/r/upliftingnews.json?raw_json=1&limit=10",
-    {
-      method: "GET",
-      redirect: "follow",
-    }
-  );
-  const postsData = await response.json();
-
-  return {
-    props: {
-      postsData,
-    },
-  };
-}
-
-// AIzaSyBZf_-RivsmpSnTvb7EOL1Ma303ovwNI3s
