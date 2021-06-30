@@ -141,7 +141,7 @@ export default function Home() {
                     </Card>
                   );
                 })
-              : videos.items.map((video, key) => {
+              : videos?.items.map((video, key) => {
                   return (
                     <Card key={key} className={styles.cardContainer}>
                       <Card.Img
