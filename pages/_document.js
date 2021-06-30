@@ -29,11 +29,6 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             referrerpolicy="no-referrer"
           />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-
           <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
             integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -44,6 +39,10 @@ class MyDocument extends Document {
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossOrigin="anonymous"
           ></script>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

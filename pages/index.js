@@ -132,6 +132,7 @@ export default function Home({ postData }) {
                         <Card.Text>{tweet.text}</Card.Text>
                         <a
                           target="_blank"
+                          rel="noreferrer"
                           className="btn btn-primary mt-3"
                           href={`https:twitter.com/${username}/status/${tweet.id}`}
                         >
@@ -153,6 +154,7 @@ export default function Home({ postData }) {
                         <Card.Text>{video.snippet.description}</Card.Text>
                         <a
                           target="_blank"
+                          rel="noreferrer"
                           className="btn btn-primary mt-3"
                           href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
                         >
