@@ -20,7 +20,7 @@ export default function Home() {
   });
 
   async function search() {
-    const res = await fetch(`http://localhost:3000/api/hello`, {
+    const res = await fetch(`/api/hello`, {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": "*",
